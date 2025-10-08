@@ -10,7 +10,7 @@ import psutil
 import resource
 import multiprocessing
 
-from utils import display_resource_monitor, extract_progress_to_process
+from .utils import display_resource_monitor, extract_progress_to_process
 
 
 # Rich imports

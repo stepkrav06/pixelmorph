@@ -22,8 +22,8 @@ from rich import box
 console = Console()
 
 # Import the transformer and simulation classes
-from image_transform import ImageTransformer
-from voronoi_morph import VoronoiSimulation
+from .image_transform import ImageTransformer
+from .voronoi_morph import VoronoiSimulation
 
 
 def main():
