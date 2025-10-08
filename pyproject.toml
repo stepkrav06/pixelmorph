@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixelmorph"
+version = "0.1.0"
+description = "A command-line tool to transform and animate image morphs using optimization algorithms"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Stepan Kravtsov"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "Pillow>=9.0.0",
+    "scipy>=1.7.0",
+    "ortools>=9.0",
+    "psutil>=5.8.0",
+    "rich>=10.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/stepkrav06/pixelmorph"
+
+[project.scripts]
+pixelmorph = "cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
